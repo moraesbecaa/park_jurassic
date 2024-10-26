@@ -57,17 +57,17 @@ html {
 nav {
   position: absolute;
   top: 0;
-  left: 0; /* Alinha o nav ao lado esquerdo da tela */
-  width: 100%; /* Faz o nav ocupar 100% da largura */
-  padding: 1rem; /* Ajusta o espaçamento interno */
-  background-color: #0d1c10; /* Cor de fundo do nav */
+  left: 0; 
+  width: 100%; 
+  padding: 1rem; 
+  background-color: #0d1c10; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 100; /* Garante que o nav fique sobre outros elementos */
+  z-index: 100; 
 }
 
-/* Ajusta o contêiner do logo */
+
 .nav__logo a {
   display: flex;
   align-items: center;
@@ -124,18 +124,37 @@ a {
   color: var(--text-light);
 }
 
-header {
-  height: 100vh;
-  background-image: linear-gradient(
-      rgba(23, 66, 48, 0.5),
-      rgba(44, 110, 42, 0.5)
-    ),
-    url("imagens/IMG_4337.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+#botao{
+  padding: 5px 70px; 
+	margin: 5px;
+	width: 15vw;
+	height: 5vh;
+	border-radius: 40px;
+	background-color: var(--primary-color-dark);
+	border: none;
+	font-family: "Alata", sans-serif;
+    font-weight: 500;
+	color: #FFF6EB;
+	font-size: 1.2rem;
 }
 
+#botao:hover{
+	background-color: var(--text-light);
+	transform: scale(1.1);
+}
+
+
+#img{
+	margin-top: 2%;
+	height: 100%;
+	width: 100%;
+	transition: opacity 1.5s ease;
+}
+
+
+header {
+   height: 10vh;
+}
 
 
 header .section__container {
